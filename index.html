@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--ここにreset.cssを-->
+  <link rel="stylesheet" href="reset.css">
+  <!-- ここにmain.scssをコンパイルしたmain.cssを読み込んで下さい -->
+<link rel="stylesheet" href="main.css">
+  <title>Sass演習</title>
+</head>
+<body>
+<!-- 授業で学んだSassを使って次の条件を満たして書いてみましょう -->
+<!-- ①:Mission, Service, Companyのセクションはスタイルが似ているので@mixinで共通化しましょう -->
+<!-- ②:Company, Contactの背景色はそれぞれ変数名を定義して実装しましょう-->
+<!-- ③:ヘッダー部分や, フレックスボックスなど入れ子にできる部分はどんどんSassを活用しましょう-->
+
+<header>
+  <h1 class="header-logo">CodeVillage</h1>
+  <nav>
+    <ul>
+      <li>mission</li>
+      <li>Service</li>
+      <li>Company</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+</header>
+
+<div id="eye-catch">
+  <h2>If today were the last day of my life,</h2>
+  <h2>would I want to do what I am about to do today?</h2>
+</div>
+
+<section id="mission">
+  <div class="wrap">
+
+    <h2>Mission</h2>
+  
+    <section class="mission-item">
+      <p>missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。</p>
+    </section>
+  
+    <section class="mission-item">
+      <p>missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。</p>
+    </section>
+  
+    <section class="mission-item">
+      <p>missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。missionが入ります。</p>
+    </section>
+  </div>
+
+</section>
+
+<section id="service">
+  <div class="wrap">
+  <h2>Service</h2>
+  
+  <div class="service-wrap">
+
+    <section class="service-item">
+      <img src="img/business1.jpg" alt="">
+      <div class="service-text">
+
+        <h3>ビジネスA</h3>
+        <p>ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。</p>
+      </div>
+    </section>
+    
+    <section class="service-item">
+      <img src="img/business2.jpg" alt="">
+      <div class="service-text">
+
+        <h3>ビジネスB</h3>
+        <p>ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。</p>
+      </div>
+    </section>
+    
+    <section class="service-item">
+      <img src="img/business3.jpg" alt="">
+      <div class="service-text">
+
+        <h3>ビジネスC</h3>
+        <p>ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。ビジネスの内容が入ります。</p>
+      </div>
+    </section>
+  </div>
+</div>
+</section>
+
+<section id="company">
+  <div class="wrap">
+
+    <h2>Company</h2>
+    
+    <ul>
+      <li>会社名</li>
+      <li>株式会社CodeVillage</li>
+    </ul>
+
+    <ul>
+      <li>住所</li>
+      <li>〒111-1111東京都豊島区1-11-1</li>
+    </ul>
+
+    <ul>
+      <li>TEL</li>
+      <li>03-1234-5678</li>
+    </ul>
+
+    <ul>
+      <li>FAX</li>
+      <li>03-1234-5678</li>
+    </ul>
+
+    <ul>
+      <li>事業内容</li>
+      <div class="td-wrap">
+        <li>事業内容1</li>
+        <li>事業内容2</li>
+        <li>事業内容3</li>
+        <li>事業内容4</li>
+        <li>事業内容5</li>
+      </div>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+
+    <h2>Contact</h2>
+    
+    <form action="">
+      <div class="contact-wrap">
+        <div class="contact-item-wrap">
+          
+          <input type="text" name="company" placeholder="会社名">
+          <input type="text" name="name" placeholder="お名前">
+          <input type="mail" name="name" placeholder="Email">
+          <input type="text" name="number" placeholder="Tel">
+        </div>
+        <textarea name="message" id="" cols="80" rows="10" placeholder="お問い合わせ内容"></textarea>
+        
+      </div>
+      <dib class="button">
+        <button type="submit">Send</button>
+      </dib>
+    </form>
+    
+  </div>
+</section>
+
+<footer>
+  <small>Copyright 2019 CodeVillage inc.AllRights Reserved.</small>
+</footer>
+</body>
+</html>

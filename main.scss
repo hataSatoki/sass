@@ -1,0 +1,161 @@
+//ここからscssを記述してください
+
+// all
+
+@charset "utf-8";
+
+body {
+    ul {
+        list-style: none;
+    }
+}
+
+@mixin style {
+    width: 70%;
+    margin: 0 auto;
+    padding: 60px 0 40px;
+    h2 {
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+}
+
+.wrap {
+    @include style;
+}
+
+@mixin style2($color,$background-color) {
+    color: $color;
+    background-color: $background-color;
+}
+
+#company {
+    @include style2(white,black);
+}
+
+#contact {
+    @include style2(black, #eee);
+}
+
+
+// header
+
+header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            margin-left: 30px;
+        }    
+    }    
+}    
+
+// eyecatch
+
+#eye-catch {
+    background-image: url(img/top_bg.jpg);
+    height: 70vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+// mission
+
+#mission {
+    .mission-item {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+
+// service
+
+#service {
+    background-image: url(img/bg_service.png);
+    .service-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    .service-item {
+        width: 300px;
+        background-color: #fff;
+        padding-bottom: 40px;
+        img {
+            width: 300px;
+        }
+        .service-text {
+            box-sizing: border-box;
+            padding: 30px 10px;
+            p {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+// company
+
+#company {
+    ul {
+        padding: 10px 0;
+        border-bottom: 1px solid;
+        display: flex;
+        li {
+            width: 300px;
+        }
+        
+    }
+}
+
+// contact
+#contact {
+    .button {
+        button {
+            width: 400px;
+            height: 30px;
+            font-size: 20px;
+            background-color: #000;
+            color: #fff;
+            display: block;
+            margin: 30px auto 0;
+        }
+    }
+    .contact-wrap {
+        display: flex;
+        justify-content: space-between;
+        .contact-item-wrap {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            input {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+// footer
+
+footer {
+    font-size: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

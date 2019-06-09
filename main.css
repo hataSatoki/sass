@@ -1,0 +1,99 @@
+body ul {
+  list-style: none; }
+
+.wrap {
+  width: 70%;
+  margin: 0 auto;
+  padding: 60px 0 40px; }
+  .wrap h2 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 40px; }
+
+#company {
+  color: white;
+  background-color: black; }
+
+#contact {
+  color: black;
+  background-color: #eee; }
+
+header {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; }
+  header ul {
+    display: flex;
+    justify-content: space-between; }
+    header ul li {
+      margin-left: 30px; }
+
+#eye-catch {
+  background-image: url(img/top_bg.jpg);
+  height: 70vw;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  #eye-catch h2 {
+    font-size: 30px;
+    margin-top: 20px; }
+
+#mission .mission-item {
+  margin-bottom: 30px;
+  text-align: center; }
+
+#service {
+  background-image: url(img/bg_service.png); }
+  #service .service-wrap {
+    display: flex;
+    justify-content: space-between; }
+  #service .service-item {
+    width: 300px;
+    background-color: #fff;
+    padding-bottom: 40px; }
+    #service .service-item img {
+      width: 300px; }
+    #service .service-item .service-text {
+      box-sizing: border-box;
+      padding: 30px 10px; }
+      #service .service-item .service-text p {
+        margin-top: 30px; }
+
+#company ul {
+  padding: 10px 0;
+  border-bottom: 1px solid;
+  display: flex; }
+  #company ul li {
+    width: 300px; }
+
+#contact .button button {
+  width: 400px;
+  height: 30px;
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  margin: 30px auto 0; }
+#contact .contact-wrap {
+  display: flex;
+  justify-content: space-between; }
+  #contact .contact-wrap .contact-item-wrap {
+    width: 400px;
+    display: flex;
+    flex-direction: column; }
+    #contact .contact-wrap .contact-item-wrap input {
+      margin-bottom: 20px; }
+
+footer {
+  font-size: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/*# sourceMappingURL=main.css.map */
